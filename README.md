@@ -8,6 +8,7 @@ Built using React, TailwindCSS, Node.js, Express, MongoDB, and JWT authenticatio
 # **Project Structure**
 
 <img width="252" height="365" alt="Screenshot from 2025-12-01 12-06-47" src="https://github.com/user-attachments/assets/4530a04b-a9ff-403c-95a7-87e7de286bb3" />
+
 <img width="252" height="573" alt="Screenshot from 2025-12-01 12-07-02" src="https://github.com/user-attachments/assets/e1a7958a-1a77-433c-a94b-2a276ef768c0" />
 
 ---
