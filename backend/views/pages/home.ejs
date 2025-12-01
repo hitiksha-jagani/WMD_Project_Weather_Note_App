@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>Welcome to Weather & Notes Dashboard</h1>
+<p>This is a server-side rendered homepage (EJS). The single-page React frontend will interact with the API at <code>/api/*</code>.</p>
+
+<section>
+    <h2>How to use</h2>
+    <ol>
+        <li>Register via <code>/api/auth/register</code></li>
+        <li>Login via <code>/api/auth/login</code> to get JWT token</li>
+        <li>Use token to access protected notes endpoints</li>
+    </ol>
+</section>
+
+<%- include('../partials/footer.ejs') %>
