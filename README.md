@@ -1,11 +1,11 @@
-# **🌤️ Weather & Notes App (MERN Full Stack Project)**
+# **Weather & Notes App (MERN Full Stack Project)**
 
 A full-stack MERN application combining real-time weather search with a secure notes management system.
 Built using React, TailwindCSS, Node.js, Express, MongoDB, and JWT authentication.
 
 ---
 
-# 📂 **Project Structure**
+# *Project Structure*
 
 weather-notes-app/
 │
@@ -52,7 +52,7 @@ weather-notes-app/
 
 ---
 
-# 🛠️ **Technologies Used**
+#  *Technologies Used*
 
 ### **Frontend**
 
@@ -74,59 +74,55 @@ weather-notes-app/
 
 ### **Third-Party API**
 
-* **OpenWeatherMap API** (for weather data)
+* OpenWeatherMap API (for weather data)
 
 ---
 
-# ⚙️ **Setup Instructions**
+# *Setup Instructions*
 
-## **1. Clone the repository**
+## *1. Clone the repository*
 
-git clone https://github.com/YOUR_USERNAME/weather-notes-app.git
-cd weather-notes-app
+* git clone https://github.com/YOUR_USERNAME/weather-notes-app.git
+* cd weather-notes-app
 
----
+## *2. Backend Setup*
 
-# 🗄️ **Backend Setup**
+* cd backend
+* npm install
 
-cd backend
-npm install
+### *Copy `.env-example` file to `.env` file*
 
-### **Copy `.env-example` file to `.env` file**
+* cp .env-example .env
+* Set all environment variables
 
-cp .env-example .env
-Set all environment variables
+### *Run backend*
 
-### **Run backend**
+* Development mode:
+* npm run dev
 
-Development mode:
-npm run dev
+* Backend runs on:
+* http://localhost:5000
 
-Backend runs on:
-http://localhost:5000
+## *Frontend Setup*
 
----
+* cd frontend
+* npm install
 
-# 💻 **Frontend Setup**
+### *Copy `.env-example` file to `.env` file*
 
-cd frontend
-npm install
+* cp .env-example .env
+* Set all environment variables
 
-### **Copy `.env-example` file to `.env` file**
+### *Run frontend*
 
-cp .env-example .env
-Set all environment variables
-
-### **Run frontend**
-
-npm run dev
-
-Frontend runs on:
-http://localhost:5173
+* npm run dev
+*
+* Frontend runs on:
+* http://localhost:5173
 
 ---
 
-# 🧪 **Testing API Using POSTMAN**
+# *Testing API Using POSTMAN*
 
 A Postman collection includes:
 
@@ -143,63 +139,63 @@ Test procedures:
 
 ---
 
-# 🔌 **API Endpoint Documentation**
+# *API Endpoint Documentation*
 
-## **AUTH ROUTES**
+## *AUTH ROUTES*
 
 ### **Register**
 
-POST /api/auth/register
-Body: `{ name, email, password }`
+* POST /api/auth/register
+* Body: `{ name, email, password }`
 
 ### **Login**
 
-POST /api/auth/login
-Body: `{ email, password }`
-Returns: JWT token
+* POST /api/auth/login
+* Body: `{ email, password }`
+* Returns: JWT token
 
 ---
 
-# **NOTES ROUTES (Protected)**
+## *NOTES ROUTES (Protected)*
 
-### **Get All Notes**
+### *Get All Notes*
 
-GET /api/notes
+* GET /api/notes
 
-### **Create Note**
+### *Create Note*
 
-POST /api/notes
-Body:
-{
-  "title": "Some title",
-  "content": "Some content"
-}
+* POST /api/notes
+* Body:
+* {
+*  "title": "Some title",
+*  "content": "Some content"
+*}
 
-### **Update Full Note**
+### *Update Full Note*
 
-PUT /api/notes/:id
+* PUT /api/notes/:id
 
-### **Patch Note**
+### *Patch Note*
 
-PATCH /api/notes/:id
+* PATCH /api/notes/:id
 
-### **Delete Note**
+### *Delete Note*
 
-DELETE /api/notes/:id
-
----
-
-# 🔐 **Authentication**
-
-Protected routes use:
-Authorization: Bearer <JWT_TOKEN>
-JWT is generated at login and verified through custom middleware.
+* DELETE /api/notes/:id
 
 ---
 
-# 🧱 **Folder Structure Explanation**
+# *Authentication*
 
-### **Backend**
+* Protected routes use:
+* Authorization: Bearer <JWT_TOKEN>
+* JWT is generated at login and verified through custom middleware.
+
+---
+
+# *Folder Structure Explanation*
+
+### *Backend*
 
 * `models/` → Mongoose schemas
 * `routes/` → Auth, Notes
@@ -208,7 +204,7 @@ JWT is generated at login and verified through custom middleware.
 * `views/` → EJS templates
 * `config/db.js` → MongoDB connection
 
-### **Frontend**
+### *Frontend*
 
 * `pages/` → Login, Register, Weather, Notes
 * `context/` → AuthContext for global state
@@ -218,24 +214,24 @@ JWT is generated at login and verified through custom middleware.
 
 ---
 
-# 📸 **Screenshots**
+# *Screenshots*
 
-### ✔ Login Page
+### Login Page
 
 <img width="1854" height="1009" alt="Screenshot from 2025-12-01 10-45-17" src="https://github.com/user-attachments/assets/bd94c835-f018-4843-81e7-98317ee0837c" />
 
-### ✔ Register Page
+### Register Page
 
 <img width="1854" height="1009" alt="Screenshot from 2025-12-01 10-45-30" src="https://github.com/user-attachments/assets/14d9a012-d214-4d91-9acd-8369e65c578f" />  
 
-### ✔ Dashboard
+### Dashboard
 
 <img width="1854" height="1009" alt="Screenshot from 2025-12-01 10-44-54" src="https://github.com/user-attachments/assets/6b390e67-d1a4-47a1-80d4-6726c45c3af2" />
 
 
 ---
 
-# 📝 **Third-Party Libraries Used**
+# *Third-Party Libraries Used*
 
 * TailwindCSS
 * OpenWeatherMap API
@@ -247,7 +243,7 @@ JWT is generated at login and verified through custom middleware.
 
 ---
 
-# 🎯 **Key Features**
+# *Key Features*
 
 * Real-time weather fetch
 * Secure login system
