@@ -5,61 +5,21 @@ Built using React, TailwindCSS, Node.js, Express, MongoDB, and JWT authenticatio
 
 ---
 
-# *Project Structure*
+# **Project Structure**
 
-weather-notes-app/
-│
-├── backend/
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── public/
-│   ├── routes/
-│   ├── views/
-│   ├── .env-example
-│   ├── package-lock.json
-│   ├── package.json
-│   └── server.js
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── hooks/
-│   │   ├── pages/
-│   │   ├── router/
-│   │   ├── styles/
-│   │   ├── utils/
-│   │   ├── App.css
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   └── main.jsx
-│   ├── .env-example
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.cjs
-│   ├── README.md
-│   ├── tailwind.config.js
-│   └── vite.config.js
-│
-└── README.md
+<img width="252" height="365" alt="Screenshot from 2025-12-01 12-06-47" src="https://github.com/user-attachments/assets/4530a04b-a9ff-403c-95a7-87e7de286bb3" />
+<img width="252" height="573" alt="Screenshot from 2025-12-01 12-07-02" src="https://github.com/user-attachments/assets/e1a7958a-1a77-433c-a94b-2a276ef768c0" />
 
 ---
 
-#  *Technologies Used*
+#  **Technologies Used**
 
-### **Frontend**
+### Frontend
 
 * React 
 * Tailwind CSS
   
-### **Backend**
+### Backend
 
 * Node.js
 * Express.js
@@ -72,30 +32,30 @@ weather-notes-app/
 * cors
 * EJS templating
 
-### **Third-Party API**
+### Third-Party API
 
 * OpenWeatherMap API (for weather data)
 
 ---
 
-# *Setup Instructions*
+# **Setup Instructions**
 
-## *1. Clone the repository*
+## 1. Clone the repository
 
-* git clone https://github.com/YOUR_USERNAME/weather-notes-app.git
+* git clone https://github.com/hitiksha-jagani/WMD_Project_Weather_Note_App.git
 * cd weather-notes-app
 
-## *2. Backend Setup*
+## 2. Backend Setup
 
 * cd backend
 * npm install
 
-### *Copy `.env-example` file to `.env` file*
+### Copy `.env-example` file to `.env` file
 
 * cp .env-example .env
 * Set all environment variables
 
-### *Run backend*
+### Run backend
 
 * Development mode:
 * npm run dev
@@ -103,26 +63,26 @@ weather-notes-app/
 * Backend runs on:
 * http://localhost:5000
 
-## *Frontend Setup*
+## 3. Frontend Setup
 
 * cd frontend
 * npm install
 
-### *Copy `.env-example` file to `.env` file*
+### Copy `.env-example` file to `.env` file
 
 * cp .env-example .env
 * Set all environment variables
 
-### *Run frontend*
+### Run frontend
 
 * npm run dev
-*
+
 * Frontend runs on:
-* http://localhost:5173
+  http://localhost:5173
 
 ---
 
-# *Testing API Using POSTMAN*
+# **Testing API Using POSTMAN**
 
 A Postman collection includes:
 
@@ -139,16 +99,16 @@ Test procedures:
 
 ---
 
-# *API Endpoint Documentation*
+# **API Endpoint Documentation**
 
-## *AUTH ROUTES*
+## **AUTH ROUTES**
 
-### **Register**
+### Register
 
 * POST /api/auth/register
 * Body: `{ name, email, password }`
 
-### **Login**
+### Login
 
 * POST /api/auth/login
 * Body: `{ email, password }`
@@ -156,46 +116,46 @@ Test procedures:
 
 ---
 
-## *NOTES ROUTES (Protected)*
+## **NOTES ROUTES (Protected)**
 
-### *Get All Notes*
+### Get All Notes
 
 * GET /api/notes
 
-### *Create Note*
+### Create Note
 
 * POST /api/notes
 * Body:
-* {
-*  "title": "Some title",
-*  "content": "Some content"
-*}
+  {
+    "title": "Some title",
+    "content": "Some content"
+  }
 
-### *Update Full Note*
+### Update Full Note
 
 * PUT /api/notes/:id
 
-### *Patch Note*
+### Patch Note
 
 * PATCH /api/notes/:id
 
-### *Delete Note*
+### Delete Note
 
 * DELETE /api/notes/:id
 
 ---
 
-# *Authentication*
+# **Authentication**
 
 * Protected routes use:
-* Authorization: Bearer <JWT_TOKEN>
+  Authorization: Bearer <JWT_TOKEN>
 * JWT is generated at login and verified through custom middleware.
 
 ---
 
-# *Folder Structure Explanation*
+# **Folder Structure Explanation**
 
-### *Backend*
+### Backend
 
 * `models/` → Mongoose schemas
 * `routes/` → Auth, Notes
@@ -204,7 +164,7 @@ Test procedures:
 * `views/` → EJS templates
 * `config/db.js` → MongoDB connection
 
-### *Frontend*
+### Frontend
 
 * `pages/` → Login, Register, Weather, Notes
 * `context/` → AuthContext for global state
@@ -214,7 +174,7 @@ Test procedures:
 
 ---
 
-# *Screenshots*
+# **Screenshots**
 
 ### Login Page
 
@@ -231,7 +191,7 @@ Test procedures:
 
 ---
 
-# *Third-Party Libraries Used*
+# **Third-Party Libraries Used**
 
 * TailwindCSS
 * OpenWeatherMap API
@@ -243,7 +203,7 @@ Test procedures:
 
 ---
 
-# *Key Features*
+# **Key Features**
 
 * Real-time weather fetch
 * Secure login system
